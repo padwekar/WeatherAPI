@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unknown">
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="@dimen/img_size_2x"
+        android:layout_height="@dimen/img_size_2x"
+        android:contentDescription="@null"
+        android:padding="@dimen/standard_padding"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal"
+        app:srcCompat="@drawable/selector_back" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/standard_margin_extra" />
+
+    <EditText
+        android:id="@+id/editTextPlaceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_margin_small"
+        android:background="@android:color/transparent"
+        android:hint="@string/lbl_search_by_city"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightWhite"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/viewUnderline"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewLocation"
+        app:layout_constraintStart_toStartOf="@+id/viewUnderline" />
+
+    <ImageButton
+        android:id="@+id/imageViewLocation"
+        android:layout_width="@dimen/img_size_1.5x"
+        android:layout_height="@dimen/img_size_1.5x"
+        android:layout_marginBottom="@dimen/standard_margin_small"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:padding="@dimen/standard_margin_small"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/viewUnderline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/selector_location" />
+
+    <View
+        android:id="@+id/viewUnderline"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/standard_margin"
+        android:layout_marginStart="@dimen/standard_margin"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+
+    <ImageView
+        android:id="@+id/imageViewSearch"
+        android:layout_width="@dimen/img_size_2x"
+        android:layout_height="@dimen/img_size_2x"
+        android:contentDescription="@null"
+        android:padding="@dimen/standard_padding"
+        android:src="@drawable/selector_search"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlaceName" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/img_size_mini"
+        android:layout_height="@dimen/img_size_mini"
+        android:layout_marginStart="@dimen/standard_margin_small"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_search_yellow"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlaceName" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_margin_small"
+        android:layout_marginTop="@dimen/standard_margin_small"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSearch"
+        app:layout_constraintStart_toStartOf="@+id/editTextPlaceName"
+        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+</android.support.constraint.ConstraintLayout>

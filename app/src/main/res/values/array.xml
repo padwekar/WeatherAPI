@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="bg_thunderstrom_array">
+        <item>@drawable/bg_thunderstrom</item>
+        <item>@drawable/bg_thunderstrom_2</item>
+    </array>
+
+    <array name="bg_light_rain_array">
+        <item>@drawable/bg_light_rain</item>
+        <item>@drawable/bg_light_rain_2</item>
+    </array>
+
+
+    <array name="bg_heavy_rain_array">
+        <item>@drawable/bg_rain</item>
+        <item>@drawable/bg_rain_2</item>
+    </array>
+
+
+    <array name="bg_light_snow_array">
+        <item>@drawable/bg_light_snow</item>
+        <item>@drawable/bg_light_snow_2</item>
+    </array>
+
+
+    <array name="bg_heavy_snow_array">
+        <item>@drawable/bg_heavy_snow</item>
+        <item>@drawable/bg_heavy_snow_2</item>
+    </array>
+
+
+    <array name="bg_fog_array">
+        <item>@drawable/bg_fog</item>
+        <item>@drawable/bg_fog_2</item>
+        <item>@drawable/bg_fog_3</item>
+    </array>
+
+
+
+    <array name="bg_clear_array">
+        <item>@drawable/bg_clear</item>
+        <item>@drawable/bg_clear_2</item>
+    </array>
+
+
+    <array name="bg_overcast_array">
+        <item>@drawable/bg_overcast</item>
+        <item>@drawable/bg_overcast_2</item>
+        <item>@drawable/bg_overcast_3</item>
+        <item>@drawable/bg_overcast_4</item>
+    </array>
+
+
+    <array name="bg_clouds_array">
+        <item>@drawable/bg_clouds</item>
+        <item>@drawable/bg_clouds_2</item>
+    </array>
+
+
+    <array name="bg_unknown_array">
+        <item>@drawable/unknown</item>
+    </array>
+
+
+
+</resources>

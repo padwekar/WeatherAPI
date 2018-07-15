@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeatherX</string>
+    <string name="lbl_loading">Loading</string>
+    <string name="format_wind_speed">%.0f m/s</string>
+    <string name="format_relative_humidity">%.0f \%%</string>
+    <string name="lbl_celcius">°C</string>
+    <string name="lbl_search_by_city">Search by City</string>
+
+</resources>

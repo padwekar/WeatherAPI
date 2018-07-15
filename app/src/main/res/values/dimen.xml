@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_large">18dp</dimen>
+    <dimen name="text_size_large_title">24dp</dimen>
+
+    <dimen name="img_size_mini">32dp</dimen>
+    <dimen name="img_size">36dp</dimen>
+    <dimen name="img_size_1.5x">56dp</dimen>
+    <dimen name="img_size_2x">72dp</dimen>
+    <dimen name="standard_margin_small">8dp</dimen>
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="standard_margin_extra">24dp</dimen>
+    <dimen name="standard_padding">16dp</dimen>
+
+</resources>
